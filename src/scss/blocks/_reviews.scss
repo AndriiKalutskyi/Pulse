@@ -1,0 +1,76 @@
+.main {
+	&__reviews {
+		padding-top: 79px;
+		padding-bottom: 40px;
+		@media (max-width: 767.98px) {
+			padding-top: 55px;
+			padding-bottom: 30px;
+		}
+		@media (max-width: 479.98px) {
+			padding-top: 35px;
+			padding-bottom: 20px;
+		}
+	}
+}
+.reviews-block {
+	&__container {
+	}
+
+	&__body {
+		padding-top: 60px;
+		@media (max-width: 767.98px) {
+			padding-top: 45px;
+		}
+		@media (max-width: 479.98px) {
+			padding-top: 30px;
+		}
+	}
+
+	&__review {
+		display: flex;
+		align-items: center;
+		column-gap: 60px;
+		margin-bottom: 60px;
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+			margin-bottom: 40px;
+		}
+	}
+}
+.review-block {
+	&__image {
+		@media (max-width: 767.98px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__content {
+		@media (max-width: 767.98px) {
+			text-align: center;
+		}
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 18px;
+		color: inherit;
+	}
+
+	&__rate {
+		color: #646464;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-family: "MuseoModerno";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 150%;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
